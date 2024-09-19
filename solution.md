@@ -35,7 +35,16 @@ const square = (num) => {
 ## Sum Arrays
 
 ```js
-
+// referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+function sum(numbers) {
+  "use strict";
+  let sum = 0;
+  const finalTotal = numbers.reduce(
+    (accumulator, value) => accumulator + value,
+    sum
+  );
+  return finalTotal;
+}
 ```
 
 ## Reversed Strings
